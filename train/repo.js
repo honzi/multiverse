@@ -228,7 +228,8 @@ function new_game(){
 
 function repo_init(){
     core_repo_init({
-      'owner': 'honzi',
+      'link': 'https://github.com/honzi/multiverse',
+      'owner': 'Honzi',
       'pointerbinds': {
         'contextmenu': {},
         'pointermove': {
@@ -238,7 +239,7 @@ function repo_init(){
         },
       },
       'storage_controls': true,
-      'title': 'multiverse',
+      'title': 'Multiverse',
     });
     new_game();
 }
