@@ -138,10 +138,27 @@
     {
       "type": "webgl_primitive_stars",
       "properties": {
-        "prefix": "skybox",
+        "prefix": "stars",
         "groups": ["skybox"],
         "height_limit": 0.49,
         "stars": 1000
+      }
+    },
+    {
+      "type": "webgl_primitive_ellipsoid",
+      "properties": {
+        "prefix": "skybox",
+        "color_bottom0": [0, 0, 0, 0],
+        "color_bottom1": [0, 0, 0.1, 0.9],
+        "color_top0": [0, 0, 0, 1],
+        "color_top1": [0, 0, 0, 1],
+        "groups": ["skybox"],
+        "position_y": 5,
+        "radius_x": -99,
+        "radius_y": -99,
+        "radius_z": -99,
+        "slices_latitude": 9,
+        "slices_longitude": 2
       }
     },
     {
