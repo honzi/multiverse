@@ -17,6 +17,7 @@ function repo_init(){
       },
       'link': 'https://github.com/honzi/multiverse',
       'menu': true,
+      'menu_lock': true,
       'owner': 'Honzi',
       'pointerbinds': {
         'contextmenu': {},
@@ -44,6 +45,11 @@ function repo_init(){
 }
 
 function restart(){
+    if(core_menu_lock
+      && !globalThis.level_json){
+        return;
+    }
+
     webgl_level_load({
       'character': {
         'camera_zoom': 25,
@@ -56,5 +62,6 @@ function restart(){
       },
       'json': level_json,
     });
+    core_menu_lock = false;
     core_escape(false);
 }

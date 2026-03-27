@@ -1,4 +1,4 @@
-const level_json = JSON.parse(`
+globalThis.level_json = JSON.parse(`
 {
   "camera_zoom_max": 0,
   "fog_end": 50,

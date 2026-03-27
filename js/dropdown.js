@@ -1,4 +1,4 @@
-const level_json = JSON.parse(`
+globalThis.level_json = JSON.parse(`
 {
   "spawn": {
     "lock": {
