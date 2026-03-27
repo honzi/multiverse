@@ -37,10 +37,10 @@ function repo_init(){
     });
 
     const level = globalThis.location.search.substring(1);
-    const element = document.createElement('script');
-    element.src = 'js/' + (level ? level : 'train') + '.js';
-    element.onload = restart;
-    document.head.appendChild(element);
+    core_script({
+      'src': 'js/' + (level ? level : 'train') + '.js',
+      'todo': restart,
+    });
 }
 
 function restart(){
