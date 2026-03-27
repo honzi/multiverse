@@ -38,6 +38,7 @@ function repo_init(){
     });
 
     const level = globalThis.location.search.substring(1);
+    document.title += ': ' + level + '.json';
     core_script({
       'src': 'js/' + (level ? level : 'train') + '.js',
       'todo': restart,
