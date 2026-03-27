@@ -2,6 +2,9 @@ globalThis.level_json = JSON.parse(`
 {
   "camera_zoom_max": 0,
   "fog_end": 500,
+  "spawn": {
+    "position_y": 14
+  },
   "paths": [
     {
       "id": "left",
@@ -54,7 +57,6 @@ globalThis.level_json = JSON.parse(`
       "entities": [
         {
           "id": "ground",
-          "attach_y": -13,
           "collision": false,
           "texture": "lavaleaf.png,.0666",
           "texture_x": 2,
@@ -71,6 +73,7 @@ globalThis.level_json = JSON.parse(`
         {
           "id": "wall_0",
           "attach_x": -30,
+          "attach_y": 20,
           "attach_z": -10,
           "collision": false,
           "rotate_x": 90,
@@ -87,6 +90,7 @@ globalThis.level_json = JSON.parse(`
         {
           "id": "wall_1",
           "attach_x": 30,
+          "attach_y": 20,
           "attach_z": -10,
           "collision": false,
           "rotate_x": 90,
@@ -103,6 +107,7 @@ globalThis.level_json = JSON.parse(`
         {
           "id": "wall_2",
           "attach_x": -30,
+          "attach_y": 20,
           "attach_z": 10,
           "collision": false,
           "rotate_x": 270,
@@ -119,6 +124,7 @@ globalThis.level_json = JSON.parse(`
         {
           "id": "wall_3",
           "attach_x": 30,
+          "attach_y": 20,
           "attach_z": 10,
           "collision": false,
           "rotate_x": 270,
@@ -177,6 +183,7 @@ globalThis.level_json = JSON.parse(`
         "front": {
           "draw": false
         },
+        "position_y": 20,
         "size_x": -100,
         "size_y": -20,
         "size_z": -20
@@ -195,15 +202,13 @@ globalThis.level_json = JSON.parse(`
         "properties": {
           "billboard": true,
           "height": 20,
-          "height_range": 30,
+          "height_range": 35,
           "width_base": 10,
           "width_leaf": 25
         },
         "type": "prefabs_webgl_tree_2d",
         "x_max": 497,
         "x_min": -497,
-        "y_max": -13,
-        "y_min": -13,
         "z_max": -40,
         "z_min": -400
       }
@@ -221,15 +226,13 @@ globalThis.level_json = JSON.parse(`
         "properties": {
           "billboard": true,
           "height": 20,
-          "height_range": 30,
+          "height_range": 35,
           "width_base": 10,
           "width_leaf": 25
         },
         "type": "prefabs_webgl_tree_2d",
         "x_max": 497,
         "x_min": -497,
-        "y_max": -13,
-        "y_min": -13,
         "z_max": 400,
         "z_min": 40
       }
