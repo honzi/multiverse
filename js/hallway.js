@@ -1,16 +1,3 @@
-<!doctype html>
-<html lang=en>
-<meta charset=utf-8>
-<meta content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=0" name=viewport>
-<title>Multiverse Train</title>
-<link href=../../common/css/core.css rel=stylesheet>
-<script src=../../common/js/core.js></script>
-<script src=../../common/js/math.js></script>
-<script src=../../common/js/entity.js></script>
-<script src=../../common/js/prefabs/uri.js></script>
-<script src=../../common/js/prefabs/webgl.js></script>
-<script src=../../common/js/webgl.js></script>
-<script>
 const level_json = JSON.parse(`
 {
   "camera_zoom_max": 0,
@@ -85,5 +72,3 @@ const level_json = JSON.parse(`
   ]
 }
 `);
-</script>
-<script src=../json.js></script>

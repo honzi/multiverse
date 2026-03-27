@@ -16,6 +16,7 @@ function repo_init(){
         },
       },
       'link': 'https://github.com/honzi/multiverse',
+      'menu': true,
       'owner': 'Honzi',
       'pointerbinds': {
         'contextmenu': {},
@@ -34,12 +35,25 @@ function repo_init(){
       'storage_controls': true,
       'title': 'Multiverse',
     });
-    restart();
+
+    const level = globalThis.location.search.substring(1);
+    const element = document.createElement('script');
+    element.src = 'js/' + (level ? level : 'train') + '.js';
+    element.onload = restart;
+    document.head.appendChild(element);
 }
 
 function restart(){
     webgl_level_load({
-      'character': -1,
+      'character': {
+        'camera_zoom': 25,
+        'collides': true,
+        'controls': 'rpg',
+        'gravity': 1,
+        'level': 0,
+        'lives': 1,
+        'model': {},
+      },
       'json': level_json,
     });
     core_escape(false);
