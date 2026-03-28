@@ -33,6 +33,7 @@ function repo_init(){
           'todo': webgl_controls_wheel,
         },
       },
+      'root': 'index.htm',
       'storage_controls': true,
       'title': 'Multiverse',
     });
