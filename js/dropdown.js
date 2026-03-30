@@ -105,9 +105,7 @@ globalThis.level_json = JSON.parse(`
               "type": "function"
             }
           ],
-          "vertex_colors": [
-            0.4, 0.2, 0.4, 1
-          ],
+          "vertex_colors": [0.4, 0.2, 0.4, 1],
           "vertices": [
             2, 2, -0,
             -2, 2, -0,

@@ -16,9 +16,7 @@ globalThis.level_json = JSON.parse(`
           "texture": "stone.png",
           "texture_x": 20,
           "texture_y": 10,
-          "vertex_colors": [
-            1, 1, 1, 1
-          ],
+          "vertex_colors": [1, 1, 1, 1],
           "vertices": [
             20, 0, -20,
             -20, 0, -20,
@@ -31,9 +29,7 @@ globalThis.level_json = JSON.parse(`
           "texture": "stone.png",
           "texture_x": 30,
           "texture_y": 30,
-          "vertex_colors": [
-            1, 1, 1, 1
-          ],
+          "vertex_colors": [1, 1, 1, 1],
           "vertices": [
             30, 0, -30,
             -30, 0, -30,
@@ -49,9 +45,7 @@ globalThis.level_json = JSON.parse(`
           "texture": "stone.png",
           "texture_x": 5,
           "texture_y": 70,
-          "vertex_colors": [
-            1, 1, 1, 1
-          ],
+          "vertex_colors": [1, 1, 1, 1],
           "vertices": [
             5, 0, -70,
             -5, 0, -70,
@@ -66,9 +60,7 @@ globalThis.level_json = JSON.parse(`
           "texture": "stone.png",
           "texture_x": 10,
           "texture_y": 70,
-          "vertex_colors": [
-            1, 1, 1, 1
-          ],
+          "vertex_colors": [1, 1, 1, 1],
           "vertices": [
             10, 0, -70,
             -10, 0, -70,
@@ -83,9 +75,7 @@ globalThis.level_json = JSON.parse(`
           "texture": "stone.png",
           "texture_x": 20,
           "texture_y": 70,
-          "vertex_colors": [
-            1, 1, 1, 1
-          ],
+          "vertex_colors": [1, 1, 1, 1],
           "vertices": [
             20, 0, -70,
             -20, 0, -70,
@@ -182,9 +172,7 @@ globalThis.level_json = JSON.parse(`
           "attach_z": -100,
           "collision": false,
           "texture": "lavaleaf.png",
-          "vertex_colors": [
-            0, 1, 1, 1
-          ],
+          "vertex_colors": [0, 1, 1, 1],
           "vertices": [
             20, 0, -70,
             -20, 0, -70,
