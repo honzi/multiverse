@@ -6,8 +6,11 @@ function repo_init(){
         'restart': {
           'onclick': restart,
         },
+        'screenshot': {
+          'onclick': webgl_screenshot,
+        },
       },
-      'info': '<button class=medium id=restart type=button>Restart</button>',
+      'info': '<button class=medium id=restart type=button>Restart</button><button class=medium id=screenshot type=button>Screenshot</button>',
       'keybinds': {
         'Backquote': {
           'down': function(){
