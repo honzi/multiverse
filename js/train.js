@@ -75,7 +75,7 @@ globalThis.level_json = JSON.parse(`
           "attach_z": -10,
           "collision": false,
           "rotate_x": 90,
-          "vertex_colors": [0.25, 0.25, 0.25, 1],
+          "vertex_colors": [0.2, 0.2, 0.2, 1],
           "vertices": [
             20, 0, -10,
             -20, 0, -10,
@@ -90,7 +90,7 @@ globalThis.level_json = JSON.parse(`
           "attach_z": -10,
           "collision": false,
           "rotate_x": 90,
-          "vertex_colors": [0.25, 0.25, 0.25, 1],
+          "vertex_colors": [0.2, 0.2, 0.2, 1],
           "vertices": [
             20, 0, -10,
             -20, 0, -10,
@@ -105,7 +105,7 @@ globalThis.level_json = JSON.parse(`
           "attach_z": 10,
           "collision": false,
           "rotate_x": 270,
-          "vertex_colors": [0.25, 0.25, 0.25, 1],
+          "vertex_colors": [0.2, 0.2, 0.2, 1],
           "vertices": [
             20, 0, -10,
             -20, 0, -10,
@@ -120,7 +120,7 @@ globalThis.level_json = JSON.parse(`
           "attach_z": 10,
           "collision": false,
           "rotate_x": 270,
-          "vertex_colors": [0.25, 0.25, 0.25, 1],
+          "vertex_colors": [0.2, 0.2, 0.2, 1],
           "vertices": [
             20, 0, -10,
             -20, 0, -10,
@@ -163,7 +163,8 @@ globalThis.level_json = JSON.parse(`
       "properties": {
         "prefix": "train",
         "all": {
-          "vertex_colors": [0.2, 0.2, 0.2, 1]
+          "texture": "grid.png",
+          "vertex_colors": [1, 1, 1, 1]
         },
         "back": {
           "draw": false
