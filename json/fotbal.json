@@ -1,0 +1,69 @@
+{
+  "spawn": {
+    "camera_rotate_x": 40,
+    "position_y": 50,
+    "position_z": 350
+  },
+  "characters": [
+    {
+      "id": "fotbal",
+      "base": true,
+      "spawn": false,
+      "entities": [
+        {
+          "id": "ground",
+          "attach_y": -0.1,
+          "texture": "lavaleaf.png",
+          "vertex_colors": [0, 0.5, 0, 1],
+          "vertices": [
+            500, 0, -400,
+            -500, 0, -400,
+            -500, 0, 400,
+            500, 0, 400
+          ]
+        },
+        {
+          "id": "hill",
+          "attach_y": 64,
+          "attach_z": 375,
+          "rotate_x": 320,
+          "texture": "lavaleaf.png",
+          "vertex_colors": [0, 0.5, 0, 1],
+          "vertices": [
+            500, 0, -100,
+            -500, 0, -100,
+            -500, 0, 100,
+            500, 0, 100
+          ]
+        }
+      ]
+    }
+  ],
+  "prefabs": [
+    {
+      "type": "prefabs_webgl_football_pitch",
+      "properties": {
+        "prefix": "default",
+        "scaling": 8
+      }
+    },
+    {
+      "type": "webgl_primitive_ellipsoid",
+      "properties": {
+        "color_bottom0": [1, 1, 0, 1],
+        "color_bottom1": [0, 0.2, 1, 1],
+        "color_top0": [0, 0.2, 0, 1],
+        "color_top1": [0, 0.2, 0, 1],
+        "groups": [
+          "skybox"
+        ],
+        "prefix": "skybox",
+        "radius_x": -99,
+        "radius_y": -99,
+        "radius_z": -99,
+        "slices_latitude": 6,
+        "slices_longitude": 2
+      }
+    }
+  ]
+}
