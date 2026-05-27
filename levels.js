@@ -17,9 +17,7 @@ function repo_init(){
       'info': '<button class=medium id=restart type=button>Restart</button><button class=medium id=screenshot type=button>Screenshot</button>',
       'keybinds': {
         'Backquote': {
-          'down': function(){
-              webgl_character_automove();
-          },
+          'down': webgl_character_automove,
         },
       },
       'link': 'https://github.com/honzi/multiverse',
