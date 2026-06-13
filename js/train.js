@@ -162,10 +162,6 @@ globalThis.level_json = JSON.parse(`
       "type": "webgl_primitive_cuboid",
       "properties": {
         "prefix": "train",
-        "all": {
-          "texture": "grid.png",
-          "vertex_colors": [1, 1, 1, 1]
-        },
         "back": {
           "draw": false
         },
@@ -175,7 +171,9 @@ globalThis.level_json = JSON.parse(`
         "position_y": 20,
         "size_x": -100,
         "size_y": -20,
-        "size_z": -20
+        "size_z": -20,
+        "texture": "grid.png",
+        "vertex_colors": [1, 1, 1, 1]
       }
     },
     {

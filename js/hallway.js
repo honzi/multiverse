@@ -54,10 +54,6 @@ globalThis.level_json = JSON.parse(`
       "type": "webgl_primitive_cuboid",
       "properties": {
         "prefix": "hallway",
-        "all": {
-          "texture": "lavaleaf.png",
-          "texture_y": 3
-        },
         "back": {
           "exclude": true
         },
@@ -66,7 +62,9 @@ globalThis.level_json = JSON.parse(`
         },
         "size_x": -10,
         "size_y": -10,
-        "size_z": -150
+        "size_z": -150,
+        "texture": "lavaleaf.png",
+        "texture_y": 3
       }
     }
   ]
