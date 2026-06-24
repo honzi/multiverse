@@ -144,8 +144,8 @@
       "type": "webgl_primitive_ellipsoid",
       "properties": {
         "prefix": "skybox",
-        "color_bottom0": [0, 0, 0, 0],
-        "color_bottom1": [0, 0, 0.1, 0.9],
+        "color_bottom0": [0, 0, 0.1, 0],
+        "color_bottom1": [0, 0, 0.2, 0.95],
         "color_top0": [0, 0, 0, 1],
         "color_top1": [0, 0, 0, 1],
         "groups": ["skybox"],
