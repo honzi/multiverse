@@ -55,9 +55,7 @@ globalThis.level_json = JSON.parse(`
         "color_bottom1": [0, 0.2, 1, 1],
         "color_top0": [0, 0.2, 0, 1],
         "color_top1": [0, 0.2, 0, 1],
-        "groups": [
-          "skybox"
-        ],
+        "groups": ["skybox"],
         "prefix": "skybox",
         "radius_x": -99,
         "radius_y": -99,
