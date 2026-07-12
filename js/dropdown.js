@@ -6,7 +6,6 @@ globalThis.level_json = JSON.parse(`
       "camera_rotate_y": 0,
       "camera_zoom": 40,
       "controls": "rts",
-      "jump_allow": false,
       "jump_height": 0,
       "position_y": 0,
       "position_z": 0,
