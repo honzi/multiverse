@@ -22,18 +22,12 @@ function repo_init(){
       'menu_lock': true,
       'owner': 'Honzi',
       'pointerbinds': {
-        'contextmenu': {},
-        'pointermove': {
-          'todo': function(){
-              webgl_controls_pointer();
-          },
+        'contextmenu': function(){},
+        'pointermove': function(){
+            webgl_controls_pointer();
         },
-        'pointerup': {
-          'todo': webgl_pick,
-        },
-        'wheel': {
-          'todo': webgl_controls_wheel,
-        },
+        'pointerup': webgl_pick,
+        'wheel': webgl_controls_wheel,
       },
       'root': 'index.htm',
       'storage_controls': true,
