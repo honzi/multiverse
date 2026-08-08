@@ -170,12 +170,8 @@ globalThis.level_json = JSON.parse(`
       "type": "webgl_primitive_cuboid",
       "properties": {
         "prefix": "base",
-        "bottom": {
-          "exclude": true
-        },
-        "front": {
-          "exclude": true
-        },
+        "bottom": false,
+        "front": false,
         "position_y": 5,
         "position_z": -180,
         "size_x": -100,
