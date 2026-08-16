@@ -69,7 +69,21 @@ globalThis.level_json = JSON.parse(`
     {
       "id": "dropdown",
       "base": true,
-      "spawn": false
+      "spawn": false,
+      "entities": [
+        {
+          "id": "me",
+          "attach_to": "_me",
+          "billboard": true,
+          "collision": false,
+          "vertices": [
+            2, 2, -0,
+            -2, 2, -0,
+            -2, -2, 0,
+            2, -2, 0
+          ]
+        }
+      ]
     },
     {
       "id": "coin_bad",
@@ -182,4 +196,5 @@ globalThis.level_json = JSON.parse(`
     }
   ]
 }
+
 `);

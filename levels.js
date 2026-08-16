@@ -56,7 +56,6 @@ function restart(){
         'gravity': 1,
         'level': 0,
         'lives': 1,
-        'model': {},
       },
       'json': level_json,
     });
