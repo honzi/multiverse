@@ -2,6 +2,9 @@ globalThis.level_json = JSON.parse(`
 {
   "camera_zoom_max": 0,
   "fog_end": 50,
+  "spawn": {
+    "jump_height": 0
+  },
   "characters": [
     {
       "id": "hallway",

@@ -48,15 +48,26 @@ function restart(){
         return;
     }
 
+    const character = {
+      'camera_zoom': 25,
+      'collides': true,
+      'controls': 'rpg',
+      'gravity': 1,
+      'level': 0,
+      'lives': 1,
+    };
+    if(level_json.camera_zoom_max !== 0){
+        Object.assign(
+          character,
+          {
+            'collide_bottom': 5,
+            'collide_top': 1,
+            'model': {},
+          }
+        );
+    }
     webgl_level_load({
-      'character': {
-        'camera_zoom': 25,
-        'collides': true,
-        'controls': 'rpg',
-        'gravity': 1,
-        'level': 0,
-        'lives': 1,
-      },
+      'character': character,
       'json': level_json,
     });
     core_menu_lock = false;
