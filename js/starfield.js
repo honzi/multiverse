@@ -17,6 +17,7 @@ globalThis.level_json = JSON.parse(`
       "properties": {
         "area": {
           "particle": true,
+          "randomize": true,
           "speed_y": 1,
           "x_max": 90,
           "x_min": -90,
