@@ -55,6 +55,13 @@ globalThis.level_json = JSON.parse(`
         {
           "id": "water_bottom",
           "alpha": 0.6,
+          "area": {
+            "density": 0.01,
+            "x_min": -700,
+            "y_min": -100,
+            "z_max": 500,
+            "z_min": -500
+          },
           "collision": false,
           "rotate_x": 180,
           "texture": "lavaleaf.png",
@@ -85,17 +92,6 @@ globalThis.level_json = JSON.parse(`
         "slices_latitude": 6,
         "slices_longitude": 2
       }
-    }
-  ],
-  "water": [
-    {
-      "density": 0.01,
-      "x_max": 0,
-      "x_min": -700,
-      "y_max": 0,
-      "y_min": -100,
-      "z_max": 500,
-      "z_min": -500
     }
   ]
 }

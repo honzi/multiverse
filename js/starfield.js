@@ -1,6 +1,7 @@
 globalThis.level_json = JSON.parse(`
 {
   "camera_zoom_max": 0,
+  "fog_start": 50,
   "fog_end": 150,
   "gravity_acceleration": 0,
   "characters": [
@@ -12,20 +13,10 @@ globalThis.level_json = JSON.parse(`
   ],
   "prefabs": [
     {
-      "type": "webgl_primitive_particle",
+      "type": "webgl_primitive_area",
       "properties": {
-        "id": "stars",
-        "entities": [
-          {
-            "id": "stars",
-            "draw_mode": "POINTS",
-            "point_size": 200,
-            "rotate_x": 90,
-            "vertex_repeat": 1000
-          }
-        ],
-        "groups": ["skybox"],
-        "particle": {
+        "area": {
+          "particle": true,
           "speed_y": 1,
           "x_max": 90,
           "x_min": -90,
@@ -33,7 +24,17 @@ globalThis.level_json = JSON.parse(`
           "y_min": -150,
           "z_max": 90,
           "z_min": -90
-        }
+        },
+        "entities": [
+          {
+            "id": "stars",
+            "draw_mode": "POINTS",
+            "point_size": 200,
+            "rotate_x": 90,
+            "vertices": 1000
+          }
+        ],
+        "groups": ["skybox"]
       }
     }
   ]
