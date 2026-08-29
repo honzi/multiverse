@@ -18,20 +18,19 @@ globalThis.level_json = JSON.parse(`
         "area": {
           "particle": true,
           "randomize": true,
-          "speed_y": 1,
+          "speed_z": 1,
           "x_max": 90,
           "x_min": -90,
-          "y_max": 150,
-          "y_min": -150,
-          "z_max": 90,
-          "z_min": -90
+          "y_max": 90,
+          "y_min": -90,
+          "z_max": 150,
+          "z_min": -150
         },
         "entities": [
           {
             "id": "stars",
             "draw_mode": "POINTS",
             "point_size": 200,
-            "rotate_x": 90,
             "vertices": 1000
           }
         ],
