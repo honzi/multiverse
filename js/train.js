@@ -1,7 +1,7 @@
 globalThis.level_json = JSON.parse(`
 {
   "camera_zoom_max": 0,
-  "fog_end": 500,
+  "fog_end": 400,
   "spawn": {
     "position_y": 14
   },
@@ -138,6 +138,7 @@ globalThis.level_json = JSON.parse(`
         "prefix": "stars",
         "groups": ["skybox"],
         "height_limit": 0.49,
+        "range": 150,
         "stars": 1000
       }
     },
