@@ -1,0 +1,73 @@
+globalThis.level_json = JSON.parse(`
+{
+  "ambient_color": [0.2, 0.2, 0.2],
+  "camera_zoom_max": 0,
+  "fog_end": 300,
+  "spawn": {
+    "position_y": 5,
+    "position_z": 15
+  },
+  "characters": [
+    {
+      "id": "forest",
+      "base": true,
+      "spawn": false,
+      "entities": [
+        {
+          "id": "ground",
+          "texture": "lavaleaf.png",
+          "texture_x": 2,
+          "texture_y": 2,
+          "vertex_colors": [0, 0.5, 0, 1],
+          "vertices": [
+            500, 0, -500,
+            -500, 0, -500,
+            -500, 0, 500,
+            500, 0, 500
+          ]
+        },
+        {
+          "id": "pit",
+          "attach_y": 0.1,
+          "collision": false,
+          "texture": "goal.png",
+          "vertex_colors": [1, 1, 1, 1],
+          "vertices": [
+            10, 0, -10,
+            -10, 0, -10,
+            -10, 0, 10,
+            10, 0, 10
+          ]
+        }
+      ]
+    }
+  ],
+  "prefabs": [
+    {
+      "type": "webgl_primitive_area",
+      "properties": {
+        "area": {
+          "particle": true,
+          "speed_y": 0.2,
+          "x_max": 3,
+          "x_min": -3,
+          "y_max": 15,
+          "z_max": 3,
+          "z_min": -3
+        },
+        "draw_mode": "LINE_LOOP",
+        "point_size": 100,
+        "vertex_colors": [1, 0, 0, 1],
+        "entities": [
+          {
+            "id": "fire",
+            "light_color": [1, 0.7, 0.5],
+            "light_range": 77,
+            "vertices": 100
+          }
+        ]
+      }
+    }
+  ]
+}
+`);
