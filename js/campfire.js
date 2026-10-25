@@ -48,10 +48,12 @@ globalThis.level_json = JSON.parse(`
       "properties": {
         "area": {
           "particle": true,
+          "randomize": true,
           "speed_y": 0.2,
           "x_max": 3,
           "x_min": -3,
           "y_max": 15,
+          "y_min": -2,
           "z_max": 3,
           "z_min": -3
         },
@@ -61,7 +63,7 @@ globalThis.level_json = JSON.parse(`
         "entities": [
           {
             "id": "fire",
-            "light_color": [1, 0.7, 0.5],
+            "light_color": [1, 0.7, 0],
             "light_range": 99,
             "vertices": 100
           }
