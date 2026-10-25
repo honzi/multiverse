@@ -2,7 +2,7 @@ globalThis.level_json = JSON.parse(`
 {
   "ambient_color": [0.2, 0.2, 0.2],
   "camera_zoom_max": 0,
-  "fog_end": 300,
+  "fog_end": 500,
   "spawn": {
     "position_y": 5,
     "position_z": 15
@@ -62,7 +62,7 @@ globalThis.level_json = JSON.parse(`
           {
             "id": "fire",
             "light_color": [1, 0.7, 0.5],
-            "light_range": 77,
+            "light_range": 99,
             "vertices": 100
           }
         ]
