@@ -16,8 +16,24 @@ globalThis.level_json = JSON.parse(`
         {
           "id": "ground",
           "texture": "lavaleaf.png",
-          "texture_x": 2,
-          "texture_y": 2,
+          "texture_x": 3,
+          "texture_y": 3,
+          "vertex_colors": [0, 0.5, 0, 1],
+          "vertices": [
+            500, 0, -500,
+            -500, 0, -500,
+            -500, 0, 500,
+            500, 0, 500
+          ]
+        },
+        {
+          "id": "leaves",
+          "attach_y": 66,
+          "collision": false,
+          "rotate_x": 180,
+          "texture": "lavaleaf.png",
+          "texture_x": 10,
+          "texture_y": 10,
           "vertex_colors": [0, 0.5, 0, 1],
           "vertices": [
             500, 0, -500,
