@@ -1,6 +1,6 @@
 globalThis.level_json = JSON.parse(`
 {
-  "ambient_color": [0.2, 0.2, 0.2],
+  "ambient_color": [0.15, 0.15, 0.15],
   "camera_zoom_max": 0,
   "fog_end": 500,
   "spawn": {
@@ -74,7 +74,6 @@ globalThis.level_json = JSON.parse(`
           "z_min": -3
         },
         "draw_mode": "LINE_LOOP",
-        "point_size": 100,
         "vertex_colors": [1, 0, 0, 1],
         "entities": [
           {
