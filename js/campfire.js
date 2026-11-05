@@ -14,6 +14,7 @@ globalThis.level_json = JSON.parse(`
       "spawn": false,
       "entities": [
         {
+          "id": "pit",
           "attach_y": 0.1,
           "collision": false,
           "texture": "goal.png",
@@ -32,6 +33,7 @@ globalThis.level_json = JSON.parse(`
     {
       "type": "webgl_primitive_cuboid",
       "properties": {
+        "prefix": "forest",
         "bottom": {
           "texture_x": 9,
           "texture_y": 9
@@ -62,6 +64,7 @@ globalThis.level_json = JSON.parse(`
         "vertex_colors": [1, 0, 0, 1],
         "entities": [
           {
+            "id": "fire",
             "light_color": [1, 0.7, 0],
             "light_range": 99,
             "vertices": 100
@@ -72,6 +75,7 @@ globalThis.level_json = JSON.parse(`
     {
       "type": "webgl_primitive_cuboid",
       "properties": {
+        "prefix": "thetree",
         "bottom": false,
         "position_y": 33,
         "position_z": -86,
@@ -87,6 +91,7 @@ globalThis.level_json = JSON.parse(`
       "type": "webgl_prefab_repeat",
       "properties": {
         "type": "webgl_primitive_cuboid",
+        "prefix": "tree1",
         "count": 42,
         "properties": {
           "bottom": false,
@@ -109,6 +114,7 @@ globalThis.level_json = JSON.parse(`
       "type": "webgl_prefab_repeat",
       "properties": {
         "type": "webgl_primitive_cuboid",
+        "prefix": "tree2",
         "count": 42,
         "properties": {
           "bottom": false,
