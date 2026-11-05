@@ -90,9 +90,8 @@ globalThis.level_json = JSON.parse(`
     {
       "type": "webgl_prefab_repeat",
       "properties": {
+        "prefix": "tree",
         "type": "webgl_primitive_cuboid",
-        "prefix": "tree1",
-        "count": 42,
         "properties": {
           "bottom": false,
           "size_x": 25,
@@ -102,35 +101,26 @@ globalThis.level_json = JSON.parse(`
           "texture": "wood.png",
           "top": false
         },
-        "x_max": 666,
-        "x_min": -666,
-        "y_max": 33,
-        "y_min": 33,
-        "z_max": -100,
-        "z_min": -666
-      }
-    },
-    {
-      "type": "webgl_prefab_repeat",
-      "properties": {
-        "type": "webgl_primitive_cuboid",
-        "prefix": "tree2",
-        "count": 42,
-        "properties": {
-          "bottom": false,
-          "size_x": 25,
-          "size_y": 66,
-          "size_z": 25,
-          "vertex_colors": [0, 1, 0, 1],
-          "texture": "wood.png",
-          "top": false
-        },
-        "x_max": 666,
-        "x_min": -666,
-        "y_max": 33,
-        "y_min": 33,
-        "z_max": 666,
-        "z_min": 100
+        "areas": [
+          {
+            "count": 42,
+            "x_max": 666,
+            "x_min": -666,
+            "y_max": 33,
+            "y_min": 33,
+            "z_max": -100,
+            "z_min": -666
+          },
+          {
+            "count": 42,
+            "x_max": 666,
+            "x_min": -666,
+            "y_max": 33,
+            "y_min": 33,
+            "z_max": 666,
+            "z_min": 100
+          }
+        ]
       }
     }
   ]

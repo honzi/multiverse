@@ -7,7 +7,7 @@ globalThis.level_json = JSON.parse(`
   },
   "paths": [
     {
-      "id": "left",
+      "id": "trees",
       "end": "warp",
       "speed": 2,
       "points": [
@@ -15,35 +15,6 @@ globalThis.level_json = JSON.parse(`
           "position_x": -500
         },
         {
-          "event_todo": [
-            {
-              "stat": "position_z",
-              "random_max": 360,
-              "set": true,
-              "value": -400
-            }
-          ],
-          "position_x": 500
-        }
-      ]
-    },
-    {
-      "id": "right",
-      "end": "warp",
-      "speed": 2,
-      "points": [
-        {
-          "position_x": -500
-        },
-        {
-          "event_todo": [
-            {
-              "stat": "position_z",
-              "random_max": 360,
-              "set": true,
-              "value": 40
-            }
-          ],
           "position_x": 500
         }
       ]
@@ -180,13 +151,13 @@ globalThis.level_json = JSON.parse(`
     {
       "type": "webgl_prefab_repeat",
       "properties": {
-        "prefix": "tree_left",
+        "prefix": "tree",
+        "type": "prefabs_webgl_tree_2d",
         "characters": {
           "level": 0,
-          "path_id": "left",
+          "path_id": "trees",
           "path_point": 1
         },
-        "count": 50,
         "properties": {
           "billboard": true,
           "height": 20,
@@ -194,35 +165,22 @@ globalThis.level_json = JSON.parse(`
           "width_base": 10,
           "width_leaf": 25
         },
-        "type": "prefabs_webgl_tree_2d",
-        "x_max": 497,
-        "x_min": -497,
-        "z_max": -40,
-        "z_min": -400
-      }
-    },
-    {
-      "type": "webgl_prefab_repeat",
-      "properties": {
-        "prefix": "tree_right",
-        "characters": {
-          "level": 0,
-          "path_id": "right",
-          "path_point": 1
-        },
-        "count": 50,
-        "properties": {
-          "billboard": true,
-          "height": 20,
-          "height_range": 35,
-          "width_base": 10,
-          "width_leaf": 25
-        },
-        "type": "prefabs_webgl_tree_2d",
-        "x_max": 497,
-        "x_min": -497,
-        "z_max": 400,
-        "z_min": 40
+        "areas": [
+          {
+            "count": 50,
+            "x_max": 497,
+            "x_min": -497,
+            "z_max": -40,
+            "z_min": -400
+          },
+          {
+            "count": 50,
+            "x_max": 497,
+            "x_min": -497,
+            "z_max": 400,
+            "z_min": 40
+          }
+        ]
       }
     }
   ]
