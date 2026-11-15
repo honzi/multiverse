@@ -122,5 +122,19 @@
         ]
       }
     }
+  ],
+  "timers": [
+    {
+      "id": "fire",
+      "frames_max": 5,
+      "repeat": -1,
+      "event_repeat": [
+        {
+          "todo": "eval",
+          "type": "function",
+          "value": "entity_entities.fire.light_range = math_oscillate({'limit':5,'max':110,'min':90,'value':entity_entities.fire.light_range})"
+        }
+      ]
+    }
   ]
 }
