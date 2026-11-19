@@ -2,7 +2,7 @@ globalThis.level_json = JSON.parse(`
 {
   "spawn": {
     "lock": {
-      "camera_rotate_x": 45,
+      "camera_rotate_x": 30,
       "camera_rotate_y": 0,
       "camera_zoom": 40,
       "controls": "rts",
